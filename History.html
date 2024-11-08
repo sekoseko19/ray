@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Pembelian - Typo.Fakes Photocard</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #Dc143c;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .history-list {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .history-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            text-align: left;
+        }
+        .history-item:last-child {
+            border-bottom: none;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #Dc143c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #b2122e;
+        }
+    </style>
+</head>
+<body>
+  
+  <header>
+    Riwayat Pembelian - Typo.Fakes Photocard
+  </header> 
+  
+  <div class="content">
+    <div class="history-list">
+      <div class="history-item">
+        <strong>Amu</strong> - Tanggal Pembelian: 10 Oktober 2024
+      </div>
+      <div class="history-item">
+        <strong>Ayase Momo</strong> - Tanggal Pembelian: 15 Oktober 2024
+      </div>
+      <div class="history-item">
+        <strong>Kugisaki Nobara</strong> - Tanggal Pembelian: 20 Oktober 2024
+      </div>
+      <div class="history-item">
+        <strong>Frieren</strong> - Tanggal Pembelian: 25 Oktober 2024
+      </div>
+    </div>
+    <button onclick="goToCatalog()" class="back-button">Kembali ke Katalog</button>
+  </div>
+
+  <script>
+      function goToCatalog() {
+          window.location.href = "Webtalog.html"; // Ganti "index.html" dengan nama file halaman katalog Anda
+      }
+  </script>
+
+</body>
+</html>

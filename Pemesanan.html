@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan via Chat - Typo.Fakes Photocard</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #Dc143c;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .order-info {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .order-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #Dc143c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .order-button:hover {
+            background-color: #b2122e;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #Dc143c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #b2122e;
+        }
+    </style>
+</head>
+<body>
+  
+  <header>
+    Pemesanan via Chat - Typo.Fakes Photocard
+  </header> 
+  
+  <div class="content">
+    <div class="order-info">
+      Untuk memesan photocard pilihan Anda, silakan tekan tombol di bawah untuk menghubungi kami langsung melalui WhatsApp. Anda dapat menanyakan detail produk, harga, atau mengonfirmasi pesanan Anda.
+    </div>
+    <div="https://api.whatsapp.com/send?phone=6283825971562/" class="order-button">Pesan via </div>
+    <br><br>
+    <button onclick="goToCatalog()" class="back-button">Kembali ke Katalog</button>
+  </div>
+
+  <script>
+      function goToCatalog() {
+          window.location.href = "Webtalog.html"; // Ganti "index.html" dengan nama file halaman katalog Anda
+      }
+  </script>
+
+</body>
+</html>

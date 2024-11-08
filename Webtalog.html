@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo.Fakes Photocard</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #Dc143c;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            background-color: #f4f4f4;
+        }
+        .dashboard button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #Dc143c;
+            transition: background-color 0.3s ease;
+        }
+        .dashboard button:hover {
+            background-color: #b2122e;
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .search-input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 280px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+        .product-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .product-description {
+            color: #666;
+            font-size: 14px;
+            text-align: justify;
+        }
+    </style>
+    <script>
+        function searchPhotocard() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+
+            cards.forEach(card => {
+                const name = card.querySelector('.product-name').textContent.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function goToHome() {
+            alert('Navigasi ke Home');
+        }
+        function goToHome() {
+            window.location.href = "home.html";
+        }
+
+        function goToHistory() {
+            alert('Navigasi ke Riwayat');
+        }
+        function goToHistory() {
+    window.location.href = "history.html";
+}
+        function orderViaWA() {
+    window.location.href = "https://wa.me/6283825971562?text=Halo%20saya%20ingin%20memesan%20photocard";
+}
+    </script>
+</head>
+<body>
+  
+  <header>
+    Typo.Fakes Photocard
+  </header> 
+  
+  <div class="dashboard">
+      <button onclick="goToHome()">Home</button>
+      <button onclick="goToHistory()">Riwayat</button>
+      <button onclick="orderViaWA()">Pemesanan via WA</button>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Carilah..." onkeyup="searchPhotocard()">
+  </div>
+
+  <div class="container"> 
+   <div class="product-card"> 
+    <img src="Amu.jpg" alt="Photocard Amu"> 
+    <div class="product-name">Amu</div> 
+    <div class="product-description">
+     Amu biasanya digambarkan sebagai karakter yang ceria, penuh semangat, dan sedikit pemberontak. Dia berusaha menemukan jati dirinya sambil menghadapi berbagai tantangan emosional dan sosial. Meskipun tampak percaya diri, Amu sebenarnya memiliki sisi sensitif dan peduli, terutama terhadap teman-temannya. Kombinasi kepribadian yang kuat dan lembut ini membuatnya menjadi karakter yang mudah diingat dan disukai.
+    </div> 
+   </div> 
+   
+   <div class="product-card"> 
+    <img src="Ayase.jpg" alt="Photocard Ayase"> 
+    <div class="product-name">Ayase Momo</div> 
+    <div class="product-description">
+      Ayase Momo dari Dandadan adalah karakter berani dan tegas yang menghadapi dunia paranormal penuh misteri. Dengan kekuatan spiritualnya, ia bertarung melawan makhluk gaib bersama temannya, Okarun, menunjukkan ketangguhan dan empati yang mendalam.
+    </div> 
+   </div> 
+   
+
+   <div class="product-card"> 
+    <img src="Kugisaki nobara.jpg" alt="Photocard kugisaki Nobara"> 
+    <div class="product-name">kugisaki Nobara</div> 
+    <div class="product-description">
+   Kugisaki Nobara adalah karakter utama dalam Jujutsu Kaisen yang kuat dan percaya diri. Dia adalah penyihir jujutsu dari pedesaan Jepang yang menggunakan teknik unik dengan boneka dan paku. Nobara memiliki hubungan erat dengan teman-teman sekelasnya, Yuji Itadori dan Megumi Fushiguro, serta menunjukkan perkembangan yang signifikan dalam keterampilan dan kepribadiannya saat melawan kutukan.
+    </div> 
+   </div> 
+   
+   <div class="product-card"> 
+    <img src="Frieren.jpg" alt="Photocard Frieren"> 
+    <div class="product-name">Frieren</div> 
+    <div class="product-description">
+      Rambut Putih dengan bola mata berwarna hijau melambangkan keindahan hakiki. Meski terlihat dingin, Frieren memiliki hati yang lembut dan perlahan belajar memahami hubungan dengan orang lain, terutama manusia yang usianya jauh lebih pendek darinya.
+    </div> 
+   </div> 
+  </div> 
+</body>
+</html>
